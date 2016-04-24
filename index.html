@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <html style="display:block; height:100%; margin:0; padding:0">
+    
+
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -15,6 +17,7 @@
     <style type="text/css">
         /* Customizable font and colors */
         html {
+        
             background: #000000;
         }
     #current_date_time{
@@ -29,6 +32,13 @@
         color: #FFFFFF;
         
     }
+    #lsc_date_time{
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+        
+    }
+    
     
     
     
@@ -48,14 +58,12 @@
     
     
         </style>
-        </head>
-    
 
 
 
 
-<body style="display:table; width:100%; height:100%; margin:0; padding:0">
-<div style="display:table-cell; width:100%; height:100%; text-align:center; vertical-align:middle">
+<body style=" width:100%; height:50%; margin:0; padding:0">
+<div style="width:100%; height:100%; text-align:center; vertical-align:middle">
         
 
 <span id="current_date_time" style="font-size:124pt; font-kerning:none"></span>
@@ -76,23 +84,22 @@
         <input type="button" class="button" value="start" onclick="start();" >
         <input type="button" class="button" value="stop" onclick="stop();" >
         <input type="button" class="button" value="reset" onclick="reset();" >
+        
+        <br>
                     
-                    
-    
-    
+    <span id="lsc_date_time" style="font-size:80pt; font-kerning:none"></span>
+    <br>
+    <input type="button" class="button" value="Sell a Car" onclick="sellACar();" >
         
 </div>
 
 
 
-
-
 </body>
-
-
-
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="sellacar.js"></script>
 <script src="index.js"></script>
 <script src="stopwatch.js"></script>
+
 </script>
 </html>
