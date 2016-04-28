@@ -1,124 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<html style="display:block; height:100%; margin:0; padding:0">
-    
-
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
+    <meta charset="UTF-8">
     <title>GTA Clock</title>
-    
-    </head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="stopwatch.js"></script>
 
-
-
-
-
+    <script src="index.js"></script>
+    <script src="sellacar.js"></script>
+</head>
 <body>
-    <style type="text/css">
-        /* Customizable font and colors */
-        html {
-        
-            background: #000000;
-        }
-    #current_date_time{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: #FFFFFF;
-        
-            }
-    #time{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: #FFFFFF;
-        
-    }
-    #lsc_date_time{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: #FFFFFF;
-    }
-    #time2{
-            font-family: sans-serif;
-            font-weight: bold;
-            color: #FFFFFF;
-    }
-    
-    
-    
-    
-    
-    
-    .button {
-        background-color: #ff3333;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
+<div class="div1">
 
-    
-    
-        </style>
-
-<body lang="de" onLoad="show();show2();">
-    
-<body style=" width:100%; height:50%; margin:0; padding:0">
-<div style="width:100%; height:100%; text-align:center; vertical-align:middle">
-        
-
-<span id="current_date_time" style="font-size:104pt; font-kerning:none"></span>
-    
-<br><br>
-    
-<input type="number" name="quantity" min="0" max="6" id="dowOffset" value="1" >
-    
- <br>
-    
-    
-        
-       
-            
-        
-        <span id="time" style="font-size:64pt; font-kerning:none"></span>
-        
-        <br>
-        
-        <input type="button" class="button" value="start" onclick="start();" >
-        <input type="button" class="button" value="stop" onclick="stop();" >
-        <input type="button" class="button" value="reset" onclick="reset();" >
-        
-        <br>
-                    
-    <span id="lsc_date_time" style="font-size:64pt; font-kerning:none"></span>
+    <span class="row currentTime" id="current_date_time"></span>
     <br>
-    <input type="button" class="button" value="Sell a Car" onclick="sellACar();" >
-     
-        <br>
-   
-   
-   <body style=" width:100%; height:50%; margin:0; padding:0">
-    <div style="width:100%; height:100%; text-align:center; vertical-align:middle">
-        
- <br><br><br><br>
-  <span id="time2" </span>
+    <input  type="range" name="quantity" min="0" max="6" id="dowOffset" value="1">
+    <br>
+    <span class="row time" id="time"></span>
+    <br>
+    <input  id="start1" type="button" class="button" value="start">
+    <input  id="stop1" type="button" class="button" value="stop">
+    <input  id="reset1" type="button" class="button" value="reset">
+    <br>
+    <span class="time" id="lsc_date_time"></span>
+    <br>
+
+
+    <input id="sellcar" type="button" class="button" value="Sell a Car"">
+    <br>
+    <br>
+    <span style="padding-top:25px; color:white; font-size:32pt;">Time wasted</span>
+    <br>
+    <span id="time2"> </span>
 </div>
-
-
-
 </body>
-   
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="sellacar.js"></script>
-   <script src="index.js"></script>
-   <script src="stopwatch.js"></script>
-   <script src="stopwatch2.js"> </script>
-
-
 </html>
